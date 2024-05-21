@@ -65,3 +65,63 @@ console.log(`The reminder after the arithmetic operations : ${reminder}`);
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);*/
+
+  /////Part 2
+  console.log("Second Part");
+  const distance=1500;
+  const costPerGallon=3;
+
+  const budget=175;
+  //let totalExpense;
+  //Conditions for 55 miles/hour
+  let at55pergallon=distance/30;
+  let timeForTheTrip = distance/55;
+  console.log("Total Gallons of fuel needed for the trip at 55 per hour: "+at55pergallon);
+  let totalExpense55=at55pergallon*costPerGallon;
+  console.log("Total expense of the trip = "+totalExpense55);
+  if(totalExpense55<budget){
+    console.log("Trip is under budget");
+  }
+  else{
+    console.log("Trip is over budget");
+  }
+  console.log("Total time for the trip in hours= "+timeForTheTrip);
+  //Conditions for 60 miles/hour
+  let at60pergallon=distance/28;
+  let timeForTheTrip60 = distance/60;
+  console.log("Total Gallons of fuel needed for the trip at 60 per hour: "+at60pergallon);
+  let totalExpense60=at60pergallon*costPerGallon;
+  console.log("Total expense of the trip = "+totalExpense60);
+  if(totalExpense60<budget){
+    console.log("Trip is under budget");
+  }
+  else{
+    console.log("Trip is over budget");
+  }
+  console.log("Total time for the trip in hours= "+timeForTheTrip60);
+  //Conditions for 70 miles/hour
+  let at70pergallon=distance/23;
+  let timeForTheTrip70 = distance/70;
+  console.log("Total Gallons of fuel needed for the trip at 70 per hour: "+at70pergallon);
+  let totalExpense70=at70pergallon*costPerGallon;
+  console.log("Total expense of the trip = "+totalExpense70);
+  if(totalExpense70<budget){
+    console.log("Trip is under budget");
+  }
+  else{
+    console.log("Trip is over budget");
+  }
+  console.log("Total time for the trip in hours= "+timeForTheTrip70);
+  let expenseComparison;
+  if(totalExpense55>totalExpense60 && totalExpense55>totalExpense70)
+    {
+        console.log("55 miles per hour has the most expense");
+    }
+    else if(totalExpense60>totalExpense55 && totalExpense60>totalExpense70)
+    {
+        console.log("60 miles per hour has the most expense");
+    }
+    else{
+        console.log("70 miles per hour has the most expense");
+    }
+  
