@@ -36,7 +36,7 @@ console.log(`The four numbers meet all the criteria \n\ and therefore : ${isVali
 }
 else{
     console.log(`The four numbers doesn't meet all the criteria \n\ and therefore : ${isValid}`);
-}git
+}
 // Check the numbers are divisible by 5 
 // This is done by the modulus operator by checking any reminder occurs by dividing by 5
 
